@@ -1,0 +1,256 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nanum Pen Script', cursive;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+nav {
+    background-color: white;
+    border-bottom: 5px black;
+    color: black;
+    height: 5rem;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style-type: none;
+    align-content: center;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-size: 20pt;
+}
+
+nav li {
+    width: 5rem;
+    text-align: center;
+    height: 100%;
+    padding-top: 30px;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* begin section title styles here */
+#title {
+    width: 40%;
+    float: left;
+    text-align: left;
+    z-index: 2;
+    color: #73B863;
+    font-size: 40pt;
+    padding-top: 0.8rem;
+}
+
+.main {
+    margin-left: 9rem;
+    margin-right: 9rem;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+}
+
+.title {
+    font-size: 10rem;
+    margin-bottom: 1rem;
+}
+
+
+.description {
+    width: 37%;
+    text-align: justify;
+    font-size: 16pt;
+    line-height: 30pt;
+    z-index: 1;
+    color: gray;
+}
+
+/* begin divider styles here */
+.divider
+{
+	position: relative;
+	margin-top: 90px;
+	height: 1px;
+}
+
+.div-transparent:before
+{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 5%;
+	right: 5%;
+	width: 90%;
+	height: 1px;
+	background-image: linear-gradient(to right, transparent, rgb(48,49,51), transparent);
+}
+
+.div-stopper:after {
+	content: "";
+	position: absolute;
+	z-index: 1;
+	top: -6px;
+	left: calc(50% - 7px);
+	width: 14px;
+	height: 12px;
+	background-color: white;
+	border-left: 1px solid rgb(48,49,51);
+	border-right: 1px solid rgb(48,49,51);
+}
+
+/* begin profile styles here */
+
+.prof_pic {
+    width: 100%;
+    border: 5px solid #8EB5DE;;
+    border-radius: 140px;
+}
+
+.teammate {
+    width: 14rem;
+    height: 18rem;
+    text-align: center;
+    z-index: 10;
+    position: relative;
+    flex: 0 0 250px;
+}
+
+.team {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-top: 2rem;
+    position: relative;
+}
+
+#name {
+    font-size: 20pt;
+    margin-top: 0;
+    text-transform: uppercase;
+}
+
+.names {
+    margin-top: 0;
+    height: 3rem;
+}
+
+#position {
+    font-size: 18pt;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.about_us {
+    margin-bottom: 0rem;
+}
+
+#app-icon {
+    height: 20rem;
+    transform: translate(30%, -90%);
+    float: right;
+}
+
+#logo-img {
+    width: 160%;
+    border-radius: 100px;
+    border: 10px solid black;
+    padding: 0;
+    margin: 0;
+}
+
+#logo {
+    padding: 0;
+    margin: 0.4rem;
+    transform: translate(20%, 20%);
+    z-index: 1;
+}
+
+/* begin form css here */
+form {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20%;
+    margin-right: 20%;
+    font-size: 18pt;
+    margin-bottom: 5%;
+}
+
+input {
+    margin-right: 50%;
+    margin-bottom: 30px;
+    height: 30px;
+    padding-left: 10px;
+    font-size: 18pt;
+}
+
+select {
+    margin-right: 50%;
+    margin-bottom: 30px;
+    height: 30px;
+    padding-left: 10px;
+    font-size: 18pt;
+}
+
+
+label {
+    margin-bottom: 10px;
+}
+
+textarea {
+    padding-left: 10px;
+    padding-top: 10px;
+    font-size: 18pt;
+    margin-bottom: 30px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+button[type=submit] {
+    background-color: #9C826C;
+    width: 8rem;
+    height: 3rem;
+    font-size: 18pt;
+    color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.required {
+    color: rgba(255, 0, 0, 0.493);
+}
+
+/* begin styles for quotes section */
+
+.quotes {
+    display: flex;
+    flex-direction: row;
+    font-size: 18pt;
+}
+
+.quotes ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style-type: none;
+    align-content: center;
+    margin: 4.5rem;
+    padding: 0;
+    height: 100%;
+    font-size: 20pt;
+}
+
+.quote {
+    width: 25%;
+    text-align: center;
+    line-height: 2rem;
+    color: black;
+}
+
